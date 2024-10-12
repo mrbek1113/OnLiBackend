@@ -9,7 +9,7 @@ async function bootstrap() {
         prefix: '/uploads/',
     });
     app.enableCors({
-        origin: ['http://localhost:5173', 'https://vercel.com/otajanov04/on-li-frontend-project/HWyPVsXLJQFkwWTdw9TGxseuKK12'],
+        origin: ['http://localhost:5173', 'https://on-li-frontend-project.vercel.app'],
         methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
         allowedHeaders: 'Content-Type, Authorization',
     });
