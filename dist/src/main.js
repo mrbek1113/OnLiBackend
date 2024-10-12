@@ -8,11 +8,13 @@ async function bootstrap() {
     app.useStaticAssets((0, path_1.join)(__dirname, '..', 'uploads'), {
         prefix: '/uploads/',
     });
-    app.enableCors({
-        origin: ['http://localhost:5173', 'https://on-li-frontend-project.vercel.app'],
-        methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
-        allowedHeaders: 'Content-Type, Authorization',
-    });
+const cors = require('cors');
+app.use(cors({
+  origin: 'https://on-li-frontend-project.vercel.app',  // Frontend domeni
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  credentials: true
+}));
+
     await app.listen(4000);
 }
 bootstrap();
