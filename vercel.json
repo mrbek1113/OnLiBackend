@@ -8,12 +8,17 @@
   ],
   "routes": [
     {
+<<<<<<< HEAD
       "src": "/api/(.*)",
       "dest": "dist/main.js"
     },
     {
       "src": "/(.*)",
       "dest": "/index.html"
+=======
+      "src": "/(.*)",
+      "dest": "dist/main.js"
+>>>>>>> c3750e2741cf0af4aeb2ea7a47b5656720eab7d4
     }
   ]
 }
